@@ -3,7 +3,7 @@
     "UId": "745d4228-e055-f520-620d-521e980cf3ba",
     "Name": "DevClassic",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1708212127000)\/",
+    "ModifiedOnUtc": "\/Date(1709193142000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/DevClassic.csproj",
     "DependsOn": [
@@ -12,6 +12,11 @@
         "PackageVersion": "7.8.0",
         "Name": "CrtCore",
         "Type": 1
+      },
+      {
+        "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
+        "PackageVersion": "7.8.0",
+        "Name": "Studio"
       }
     ]
   }

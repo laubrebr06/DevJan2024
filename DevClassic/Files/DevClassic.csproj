@@ -301,6 +301,11 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
+		<Reference Include="Terrasoft.Configuration">
+			<HintPath>$(RelativePkgFolderPath)/../bin/Terrasoft.Configuration.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtCore">
 			<HintPath>$(RelativePkgFolderPath)/CrtCore/$(StandalonePackageAssemblyPath)/CrtCore.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -406,13 +411,13 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtCustomer360Mobile">
-			<HintPath>$(RelativePkgFolderPath)/CrtCustomer360Mobile/$(StandalonePackageAssemblyPath)/CrtCustomer360Mobile.dll</HintPath>
+		<Reference Include="CrtProductivityApp">
+			<HintPath>$(RelativePkgFolderPath)/CrtProductivityApp/$(StandalonePackageAssemblyPath)/CrtProductivityApp.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtProductivityApp">
-			<HintPath>$(RelativePkgFolderPath)/CrtProductivityApp/$(StandalonePackageAssemblyPath)/CrtProductivityApp.dll</HintPath>
+		<Reference Include="CrtCustomer360Mobile">
+			<HintPath>$(RelativePkgFolderPath)/CrtCustomer360Mobile/$(StandalonePackageAssemblyPath)/CrtCustomer360Mobile.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -428,7 +433,9 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
-	<ItemGroup Label="Entity Files" />
+	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/DevClassic/Schemas/UsrRealtyTypeClassic/UsrRealtyTypeClassic.cs" Condition="Exists('$(RelativePkgFolderPath)/DevClassic/Schemas/UsrRealtyTypeClassic/UsrRealtyTypeClassic.cs')" />
+	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">
 		<Message Importance="High" Text="*********** Project [$(MSBuildProjectFile)] TargetFramework [$(TargetFramework)] CoreTargetFramework [$(CoreTargetFramework)]" />
