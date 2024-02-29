@@ -1,0 +1,9 @@
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\Bin\DevClassic.dll
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\Bin\DevClassic.pdb
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\obj\Release\DevClassic.csproj.AssemblyReference.cache
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\obj\Release\DevClassic.GeneratedMSBuildEditorConfig.editorconfig
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\obj\Release\DevClassic.AssemblyInfoInputs.cache
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\obj\Release\DevClassic.AssemblyInfo.cs
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\obj\Release\DevClassic.csproj.CoreCompileInputs.cache
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\obj\Release\DevClassic.dll
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\DevClassic\Files\obj\Release\DevClassic.pdb
