@@ -1,0 +1,44 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "52a03240-7937-4f68-b22b-050792cb08fd",
+      "A2": "UsrRealtyFreedomUIRelatedPage",
+      "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "93dd71d5-102b-4c0f-98d5-706b06298b81",
+      "B8": "0.0.0.0",
+      "AD1": "78c96211-0a79-421e-85b8-6e52819b543c",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [
+    {
+      "UId": "a8b5ca3d-2da9-47d7-a426-85e195916c0c",
+      "PageSchemaUId": "9da27ff1-f15e-42ff-9583-0c5188543a73",
+      "IsDefault": true,
+      "IsSspDefault": false,
+      "Actions": null,
+      "Role": null,
+      "TypeColumnValue": null
+    },
+    {
+      "UId": "62ecfa49-0424-229c-9c33-f0e0530e8640",
+      "PageSchemaUId": "9da27ff1-f15e-42ff-9583-0c5188543a73",
+      "IsDefault": false,
+      "IsSspDefault": false,
+      "Actions": {
+        "Add": true
+      },
+      "Role": null,
+      "TypeColumnValue": null
+    }
+  ],
+  "TypeColumnUId": null
+}
+    }
+  }
+}
