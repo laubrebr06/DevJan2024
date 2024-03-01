@@ -2,7 +2,9 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.1cd93c4b-dddf-0c20-11a3-be2afe4cd64a.Caption" Value="Make elements required: Area" />
 			<Item Name="AddonConfig.Rules.52230828-152a-81dd-f4aa-74b4ac5a077f.Caption" Value="Show elements: Comment" />
+			<Item Name="AddonConfig.Rules.efc29b82-c030-7fd7-1913-12a780ae2a6c.Caption" Value="Make elements required: Price, USD" />
 			<Item Name="Caption" Value="Realty freedomUI form page (Business rules)" />
 		</Items>
 	</Group>

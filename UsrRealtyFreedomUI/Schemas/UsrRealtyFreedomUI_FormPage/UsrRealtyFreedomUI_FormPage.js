@@ -1,5 +1,4 @@
-/* jshint esversion: 11 */
-define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/["UsrMyUtils"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(myutils)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -498,9 +497,17 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"clicked": {
 						"request": "crt.CreateRecordRequest",
 						"params": {
-							"entityName": "UsrRealtyVisitsModalPage"
+							"entityName": "UsrVisitRealtyFreedomUI",
+							"defaultValues": [
+								{
+									"attributeName": "UsrParentRealty",
+									"value": "$Id"
+								}
+							]
 						}
-					}
+					},
+					"visible": true,
+					"clickMode": "default"
 				},
 				"parentName": "FlexContainer_wdajou3",
 				"propertyName": "items",
@@ -579,7 +586,7 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"clicked": {
 						"request": "crt.ImportDataRequest",
 						"params": {
-							"entitySchemaName": "UsrRealtyVisitsModalPage"
+							"entitySchemaName": "UsrVisitRealtyFreedomUI"
 						}
 					}
 				},
@@ -638,7 +645,10 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					},
 					"features": {
 						"rows": {
-							"selection": false
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
 						}
 					},
 					"items": "$GridDetail_p7ht28t",
@@ -647,36 +657,28 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"primaryColumnName": "GridDetail_p7ht28tDS_Id",
 					"columns": [
 						{
-							"id": "26328bda-e215-80da-9c47-74e6e5cd023f",
+							"id": "3fea1a4b-48bc-caf9-c275-da761ba9c5c8",
 							"code": "GridDetail_p7ht28tDS_UsrVisitdatetime",
 							"path": "UsrVisitdatetime",
 							"caption": "#ResourceString(GridDetail_p7ht28tDS_UsrVisitdatetime)#",
 							"dataValueType": 7
 						},
 						{
-							"id": "6318754a-7fc6-387a-c4cf-275ce8fcad04",
-							"code": "GridDetail_p7ht28tDS_UsrPotentialcustomer",
-							"path": "UsrPotentialcustomer",
-							"caption": "#ResourceString(GridDetail_p7ht28tDS_UsrPotentialcustomer)#",
+							"id": "6df30b69-2471-8412-0464-069e7b320562",
+							"code": "GridDetail_p7ht28tDS_UsrPotentialCustomer",
+							"path": "UsrPotentialCustomer",
+							"caption": "#ResourceString(GridDetail_p7ht28tDS_UsrPotentialCustomer)#",
 							"dataValueType": 10,
 							"referenceSchemaName": "Contact"
 						},
 						{
-							"id": "858b8aa9-7707-693e-9395-067a4601a0dc",
-							"code": "GridDetail_p7ht28tDS_UsrOwner",
-							"path": "UsrOwner",
-							"caption": "#ResourceString(GridDetail_p7ht28tDS_UsrOwner)#",
-							"dataValueType": 10,
-							"referenceSchemaName": "Contact"
-						},
-						{
-							"id": "a09435e9-9362-d3d9-a123-9418e3f10722",
+							"id": "311cee88-b5e2-7edd-7944-16d82573b990",
 							"code": "GridDetail_p7ht28tDS_UsrComment",
-							"path": "UsrComment",
 							"caption": "#ResourceString(GridDetail_p7ht28tDS_UsrComment)#",
 							"dataValueType": 28
 						}
-					]
+					],
+					"referenceSchema": "UsrRealtyVisitsModalPage"
 				},
 				"parentName": "GridContainer_gtftpnl",
 				"propertyName": "items",
@@ -698,11 +700,29 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"PDS_UsrPrice_akvp7su": {
 						"modelConfig": {
 							"path": "PDS.UsrPrice"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 1,
+									"message": "#ResourceString(PriceMustBeGreaterthanZero)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrArea_7dpo9xj": {
 						"modelConfig": {
 							"path": "PDS.UsrArea"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 1,
+									"message": "#ResourceString(AreaMustBeGreaterthanZero)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrType_uvfzw01": {
@@ -818,11 +838,17 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 							"sortingConfig": {
 								"default": [
 									{
-										"direction": "asc",
-										"columnName": "UsrVisitdatetime"
+										"direction": "desc",
+										"columnName": "UsrComment"
 									}
 								]
-							}
+							},
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "GridDetail_p7ht28t_PredefinedFilter"
+								}
+							]
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -831,14 +857,9 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 										"path": "GridDetail_p7ht28tDS.UsrVisitdatetime"
 									}
 								},
-								"GridDetail_p7ht28tDS_UsrPotentialcustomer": {
+								"GridDetail_p7ht28tDS_UsrPotentialCustomer": {
 									"modelConfig": {
-										"path": "GridDetail_p7ht28tDS.UsrPotentialcustomer"
-									}
-								},
-								"GridDetail_p7ht28tDS_UsrOwner": {
-									"modelConfig": {
-										"path": "GridDetail_p7ht28tDS.UsrOwner"
+										"path": "GridDetail_p7ht28tDS.UsrPotentialCustomer"
 									}
 								},
 								"GridDetail_p7ht28tDS_UsrComment": {
@@ -863,6 +884,9 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 						"modelConfig": {
 							"path": "PDS.UsrOffertypeUsrCommissionPercent"
 						}
+					},
+					"GridDetail_p7ht28t_PredefinedFilter": {
+						"value": null
 					}
 				}
 			},
@@ -883,7 +907,15 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				"operation": "merge",
 				"path": [],
 				"values": {
-					"primaryDataSourceName": "PDS"
+					"primaryDataSourceName": "PDS",
+					"dependencies": {
+						"GridDetail_p7ht28tDS": [
+							{
+								"attributePath": "UsrParentRealty",
+								"relationPath": "PDS.Id"
+							}
+						]
+					}
 				}
 			},
 			{
@@ -933,16 +965,13 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 						"type": "crt.EntityDataSource",
 						"scope": "viewElement",
 						"config": {
-							"entitySchemaName": "UsrRealtyVisitsModalPage",
+							"entitySchemaName": "UsrVisitRealtyFreedomUI",
 							"attributes": {
 								"UsrVisitdatetime": {
 									"path": "UsrVisitdatetime"
 								},
-								"UsrPotentialcustomer": {
-									"path": "UsrPotentialcustomer"
-								},
-								"UsrOwner": {
-									"path": "UsrOwner"
+								"UsrPotentialCustomer": {
+									"path": "UsrPotentialCustomer"
 								},
 								"UsrComment": {
 									"path": "UsrComment"
@@ -976,7 +1005,8 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					   request.attributeName === 'PDS_UsrOffertypeUsrCommissionPercent' ) { 		// or multiplier changed
 						var price = await request.$context.PDS_UsrPrice_akvp7su;
 						var percent = await request.$context.PDS_UsrOffertypeUsrCommissionPercent;
-						var commission = price * percent / 100;
+						//var commission = price * percent / 100;
+						var commission = myutils.my_proc(price,percent);
 						request.$context.PDS_UsrCommission_85rebco = commission;
 					}
 					/* Call the next handler if it exists and return its result. */
@@ -986,6 +1016,38 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			/* The validator type must contain a vendor prefix.
+			Format the validator type in PascalCase. */
+			"usr.DGValidator": {
+				validator: function (config) {
+					return function (control) {
+						let value = control.value;
+						let minValue = config.minValue;
+						let valueIsCorrect = value >= minValue;
+						var result;
+						if (valueIsCorrect) {
+							result = null;
+						} else {
+							result = {
+								"usr.DGValidator": { 
+									message: config.message
+								}
+							};
+						}
+						return result;
+					};
+				},
+				params: [
+					{
+						name: "minValue"
+					},
+					{
+						name: "message"
+					}
+				],
+				async: false
+			}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });

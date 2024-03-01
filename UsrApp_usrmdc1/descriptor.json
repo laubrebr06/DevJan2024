@@ -1,0 +1,23 @@
+﻿{
+  "Descriptor": {
+    "UId": "3a0ed7a9-2b5e-45be-897b-74e6bf39cc3e",
+    "Name": "UsrApp_usrmdc1",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1709294002000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrApp_usrmdc1.csproj",
+    "DependsOn": [
+      {
+        "UId": "06d9ef10-51d8-122c-8933-9212e84236c9",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtBase"
+      },
+      {
+        "UId": "2ecba2bd-b810-47a5-a1b1-08c888529d6c",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCustomer360App",
+        "Type": 1
+      }
+    ]
+  }
+}
