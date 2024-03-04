@@ -38,7 +38,7 @@
 }
 + MetaData.Schema.D2 {
   "UId": "27282766-745c-486e-b946-f1e078200d3a",
-  "A2": "UsrPriceUSD",
+  "A2": "UsrPrice",
   "A3": "5635dbd3-c095-4b26-9d7c-4e36f18b8d54",
   "A4": "5635dbd3-c095-4b26-9d7c-4e36f18b8d54",
   "A5": "59c341ca-dc2e-499e-bac8-eacb6c751679",
@@ -67,7 +67,7 @@
 }
 + MetaData.Schema.D2 {
   "UId": "69eae3b1-8c83-40ae-b91c-7e68cf7d3c80",
-  "A2": "UsrTypeOffer",
+  "A2": "UsrOfferType",
   "A3": "5635dbd3-c095-4b26-9d7c-4e36f18b8d54",
   "A4": "5635dbd3-c095-4b26-9d7c-4e36f18b8d54",
   "A5": "59c341ca-dc2e-499e-bac8-eacb6c751679",
@@ -75,8 +75,8 @@
   "S4": "bc6b9e9a-2935-4f08-a474-e5ed14c82c0d",
   "E6": true,
   "E20": true,
-  "E17": "UsrTypeOfferId",
-  "E18": "UsrTypeOfferName"
+  "E17": "UsrOfferTypeId",
+  "E18": "UsrOfferTypeName"
 }
 ~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","11672503-71df-4f8d-8eec-120782c12a7a","940f9bfd-a260-4518-8dcb-c1b9ab4a282c","27282766-745c-486e-b946-f1e078200d3a","90c3ce92-9170-4ad4-9201-b97f60d44784","21e6c4de-7353-4ebb-9635-56e2182c578e","69eae3b1-8c83-40ae-b91c-7e68cf7d3c80"]
 = MetaData.Schema.D36.A3 "5635dbd3-c095-4b26-9d7c-4e36f18b8d54"

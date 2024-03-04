@@ -1,0 +1,10 @@
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\Bin\UsrApp_usrmdc1.dll
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\Bin\UsrApp_usrmdc1.pdb
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.csproj.AssemblyReference.cache
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.GeneratedMSBuildEditorConfig.editorconfig
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.AssemblyInfoInputs.cache
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.AssemblyInfo.cs
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.csproj.CoreCompileInputs.cache
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.sourcelink.json
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.dll
+C:\BGlobalProjects\CreatioV1\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrApp_usrmdc1\Files\obj\Release\UsrApp_usrmdc1.pdb

@@ -8,19 +8,19 @@
     ".NETFramework,Version=v4.7.2": []
   },
   "packageFolders": {
-    "C:\\Users\\laubr\\.nuget\\packages\\": {}
+    "C:\\WINDOWS\\TEMP\\1\\IIS APPPOOL_Creatio\\Default\\dotnet\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "8.1.1.3635",
     "restore": {
       "projectUniqueName": "C:\\BGlobalProjects\\CreatioV1\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\DevClassic\\Files\\DevClassic.csproj",
       "projectName": "DevClassic",
       "projectPath": "C:\\BGlobalProjects\\CreatioV1\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\DevClassic\\Files\\DevClassic.csproj",
-      "packagesPath": "C:\\Users\\laubr\\.nuget\\packages\\",
+      "packagesPath": "C:\\WINDOWS\\TEMP\\1\\IIS APPPOOL_Creatio\\Default\\dotnet\\.nuget\\packages\\",
       "outputPath": "C:\\BGlobalProjects\\CreatioV1\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\DevClassic\\Files\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\laubr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\WINDOWS\\TEMP\\1\\IIS APPPOOL_Creatio\\Default\\dotnet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

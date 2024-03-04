@@ -10,6 +10,7 @@
 			<Item Name="LocalizableStrings.addRecord_me2g0vm_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area cannot be less than 100 sq ft" />
 			<Item Name="LocalizableStrings.AreaMustBeGreaterthanZero.Value" Value="Area must be greater than zero." />
+			<Item Name="LocalizableStrings.Button_8oxqb1w_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.Button_rm09fxq_caption.Value" Value="Push!" />
 			<Item Name="LocalizableStrings.ExpansionPanel_g9zufek_title.Value" Value="Visits" />
 			<Item Name="LocalizableStrings.ExpansionPanel_nb7b3ph_title.Value" Value="Realty visits" />
@@ -40,6 +41,9 @@
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_99edpy2_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_ad8jd9y_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_h2u1rmj_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_ic2gf00_caption.Value" Value="Run Web Service Calc Sum of prices" />
+			<Item Name="LocalizableStrings.MenuItem_so1g2bm_caption.Value" Value="Calculate average prices" />
+			<Item Name="LocalizableStrings.MenuItem_StartService_caption.Value" Value="Run Web Service Calc Sum of prices" />
 			<Item Name="LocalizableStrings.NumberInput_6zo2yzd_label.Value" Value="Number" />
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50.0" />
 			<Item Name="LocalizableStrings.PriceMustBeGreaterthanZero.Value" Value="Price, USD must be greater than zero." />

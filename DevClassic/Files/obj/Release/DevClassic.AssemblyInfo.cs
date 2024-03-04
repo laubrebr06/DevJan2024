@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DevClassic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("8.1.1.3635")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.1.1.3635")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.1.1.3635+2cb467bf16100883405f7db668076a76521d6886")]
 [assembly: System.Reflection.AssemblyProductAttribute("DevClassic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DevClassic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("8.1.1.3635")]

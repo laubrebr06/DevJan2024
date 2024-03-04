@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UsrRealtyFreedomUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("8.1.1.3635")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.1.1.3635+5add60063a2c4aaa0cf289c431e654ce272b43ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.1.1.3635+2cb467bf16100883405f7db668076a76521d6886")]
 [assembly: System.Reflection.AssemblyProductAttribute("UsrRealtyFreedomUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UsrRealtyFreedomUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("8.1.1.3635")]

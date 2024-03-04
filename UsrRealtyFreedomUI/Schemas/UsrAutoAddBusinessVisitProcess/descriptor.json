@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "fc83f802-4ce9-4530-a9a7-e1641caf50a9",
+    "Name": "UsrAutoAddBusinessVisitProcess",
+    "ModifiedOnUtc": "\/Date(1709552675000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Auto Add Business Visit Process",
+    "DependsOn": []
+  }
+}
